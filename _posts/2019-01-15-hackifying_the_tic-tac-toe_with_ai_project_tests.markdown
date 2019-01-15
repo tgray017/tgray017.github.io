@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Hackifying the Tic-Tac-Toe With AI Project Tests"
-date:       2019-01-15 12:59:50 +0000
+date:       2019-01-15 07:59:51 -0500
 permalink:  hackifying_the_tic-tac-toe_with_ai_project_tests
 ---
 
@@ -29,6 +29,6 @@ To work around this, I added a few lines of code to the `Game` class's `#initial
     end
   end
 ```
-*Full repo here: https://github.com/tgray017/ttt-with-ai-project-v-000.*
+*Full repo here: [https://github.com/tgray017/ttt-with-ai-project-v-000](https://github.com/tgray017/ttt-with-ai-project-v-000).*
 
 I know, it looks awful. I'm a terrible human being for committing such a travesty. I may as well have just cut someone off in traffic while giving them the finger. I don't know how I'll be able to live with myself knowing that this exists in my GitHub repo for anyone to see, but I do know that I'm looking forward to writing my own tests so that I can just change the expectations of the test instead of hackifying the program to pass the test. 
