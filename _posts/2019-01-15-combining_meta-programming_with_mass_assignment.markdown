@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Combining Meta-programming with Mass Assignment"
-date:       2019-01-15 14:36:30 +0000
+date:       2019-01-15 09:36:31 -0500
 permalink:  combining_meta-programming_with_mass_assignment
 ---
 
@@ -98,4 +98,4 @@ Title:
 
 This approach is extremely useful when dealing with a lot of data where you don't need to implement custom constructors, and you want to create instance variables out of whatever data is thrown at you. This is why I believe that meta-programming and mass assignment can be awesome tools for any ruby programer!
 
-*See my full CLI repo here: [https://github.com/tgray017/gotcharacterquery](https://github.com/tgray017/gotcharacterquery). *
+*See my full CLI repo here: [https://github.com/tgray017/got_character_query](https://github.com/tgray017/got_character_query). *
