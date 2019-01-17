@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Combining Meta-programming with Mass Assignment"
+title:      "Coupling Meta-programming Concepts with Mass Assignment"
 date:       2019-01-15 09:36:31 -0500
 permalink:  combining_meta-programming_with_mass_assignment
 ---
@@ -16,7 +16,7 @@ def assign_character_properties(properties)
 	properties.each {|k, v| self.send("#{k}=", v)}
 end 
 ```
-This, however, would require explicitly defining `attr_accessors` for each potental key in the ruby file (otherwise I'd get a `NoMethod` error). But because my project involved scraping many different wiki pages, that would mean defining many different `attr_accessors`, because although some of these keys overlapped across all characters (e.g. `:house`, `:family`, `:gender`), others were more obscure and were only used by a small subset of characters (e.g. `:significant_other`, `:voiced_by`, :`motion_picture`). Because combing through each individual wiki page to determine all the potential `attr_accessors` felt wrong, and because I'm lazy, I turned to Google for a metaprogramming solution. 
+This, however, would require explicitly defining `attr_accessors` for each potental key in the ruby file (otherwise I'd get a `NoMethod` error). But because my project involved scraping many different wiki pages, that would mean defining many different `attr_accessors`, because although some of these keys overlapped across all characters (e.g. `:house`, `:family`, `:gender`), others were more obscure and were only used by a small subset of characters (e.g. `:significant_other`, `:voiced_by`, :`motion_picture`). Since combing through each individual wiki page to determine all the potential `attr_accessors` felt wrong, and since I'm lazy, I turned to Google for a metaprogramming solution. 
 
 It turns out that the solution is way simpler than I thought it would be--that same `#send` method can be used for `attr_accessors`, but instead of operating on the instance of the class like in the previous example, it would need to operate on the class itself. This turned out to be quite elegant, if I do say so myself:
 ```
@@ -96,6 +96,6 @@ Title:
    Hand of the King
 ```
 
-This approach is extremely useful when dealing with a lot of data where you don't need to implement custom constructors, and you want to create instance variables out of whatever data is thrown at you. This is why I believe that meta-programming and mass assignment can be awesome tools for any ruby programer!
+This approach is extremely useful when dealing with a lot of data where you don't need to implement custom constructors, and you want to create instance variables out of whatever data is thrown at you. This is why I believe that meta-programming and mass assignment can be awesome tools for any ruby programmer!
 
-*See my full CLI repo here: [https://github.com/tgray017/got_character_query](https://github.com/tgray017/got_character_query). *
+*See my full CLI repo here: [https://github.com/tgray017/gotcharacterquery](https://github.com/tgray017/gotcharacterquery).*
