@@ -1,11 +1,11 @@
 # Site settings
-author: tgray017@gmail.com
-title: 
+author: Thomas Gray
+title: Title TBD
 header-img: img/home-bg.png
 email: tgray017@gmail.com
-copyright_name: tgray017@gmail.com
+copyright_name: Thomas Gray
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Subtitle TBD
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  tgray017
