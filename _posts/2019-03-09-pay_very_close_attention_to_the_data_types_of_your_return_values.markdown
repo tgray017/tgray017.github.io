@@ -39,7 +39,7 @@ ActiveRecord::AssociationTypeMismatch: Post(#70149712581500) expected, got #<Act
 from /Users/thomas.gray/.rvm/gems/ruby-2.3.1/ruby/2.3.0/gems/activerecord-5.2.2/lib/active_record/associations/association.rb:246:in `raise_on_type_mismatch!'
 ```
 
-This confused the hell out of me, because it looked like what it was expecting was exactly what it was getting (the instance `Post(#70149712581500))`. It took me 4 hours of googling to figure out it wasn't a bug with ActiveRecord, and when I read through the error for the millionth time I finally realized that the return value of `commented_post = Post.where(:title => "Wilson is the best dog in the whole world")` was an _array_ of `Post` instances--an array that only had one item. All I had to do was change this to `commented_post = Post.where(:title => "Wilson is the best dog in the whole world").first` and I finally succeeded in seeding my development database. 
+This was very confusing to me, because it looked like what it was expecting was exactly what it was getting (the instance `Post(#70149712581500))`. It took me 4 hours of googling to figure out it wasn't a bug with ActiveRecord, and when I read through the error for the millionth time I finally realized that the return value of `commented_post = Post.where(:title => "Wilson is the best dog in the whole world")` was an _array_ of `Post` instances--an array that only had one item. All I had to do was change this to `commented_post = Post.where(:title => "Wilson is the best dog in the whole world").first` and I finally succeeded in seeding my development database. 
 
 In short, if you want to save yourself some pain, pay VERY close attention to the data types of your return values.
 
