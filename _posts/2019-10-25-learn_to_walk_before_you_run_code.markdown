@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Learn to Walk Before you Run... Code"
-date:       2019-10-25 16:47:19 +0000
+date:       2019-10-25 12:47:20 -0400
 permalink:  learn_to_walk_before_you_run_code
 ---
 
@@ -20,7 +20,7 @@ So, I built out the models and set up all of the necessary relationships between
 
 Bad idea. At least, the way I went about it was a bad idea. Googling a specific technical problem is a good idea if you have some notion of how the language you're trying to code the solution in works. That was not the case for me, but I went on googling away anyway.
 
-Obviously, syntax is key, and I knew none of it for JQuery or JS. Every time I found something on Stack Overflow that looked like it would solve my problem, it didn't, and I would spend hours trying to figure out why. I would actually get mad at the users on Stack Overflow who had answered the OP's question After about a week of banging my head against my keyboard, I finally figured it out. I don't even remember what the "aHA" moment was because I think I had blocked the whole miserable experience from my memory, but this is what ended up working for me:
+Obviously, syntax is key, and I knew none of it for JQuery or JS. Every time I found something on Stack Overflow that looked like it would solve my problem, it didn't, and I would spend hours trying to figure out why. After about a week of banging my head against my keyboard, I finally figured it out. I don't even remember what the "aHA" moment was because I think I had blocked the whole miserable experience from my memory, but this is what ended up working for me:
 
 ```
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -36,4 +36,4 @@ $(document).on('turbolinks:load', function(){
 
 I added this to the `head` of my `application.html.erb` and voila, it worked. Basically what this does is toggle some CSS between `style="display: block;"` and `style="display: none;"` for any HTML element with an ID of "new-reply" whenever the associated comment is clicked by the user. So the reply form is still there for each individual comment, it's just not displayed until the user clicks on the comment.
 
-Was getting this bit of functionality working worth the time and the headache? Definitely not. Would it have been way easier if I had a shred of knowledge of how JS or JQuery worked before trying to implement this? Absolutely. Lesson learned--learn to walk before you run.
+Was getting this bit of functionality working worth the time and the headache? Definitely not. Would it have been way easier if I had a shred of knowledge of how JS or JQuery worked before trying to implement this? Absolutely. Lesson learned--walk before you run.
