@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Diving Deeper into the Magic of ActiveRecord"
+title:      "The Magic of ActiveRecord"
 date:       2019-07-12 07:26:41 -0400
 permalink:  test_test_test
 ---
