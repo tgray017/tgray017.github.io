@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Handling AJAX Errors with Vanilla JS"
-date:       2020-02-10 18:35:39 +0000
+date:       2020-02-10 13:35:40 -0500
 permalink:  handling_ajax_errors_with_vanilla_js
 ---
 
