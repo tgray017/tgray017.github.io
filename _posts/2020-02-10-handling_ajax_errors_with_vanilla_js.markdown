@@ -106,7 +106,7 @@ Within `frontend/style.css`:
 }
 ```
 
-There you have it--a simple technique to differentiate between errors and communicate the error to the user in an unobtrusive way. Of course, there is much more that can be done with error handling in JavaScript, and anyone who is looking for more information on the subject should take a look at MDN's documentation on [exception handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#Exception_handling_statements) statements.
+There you have it--a simple technique to differentiate between errors and communicate the error to the user in a quick and intuitive way. Of course, there is much more that can be done with error handling in JavaScript, and anyone who is looking for more information on the subject should take a look at MDN's documentation on [exception handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#Exception_handling_statements) statements.
 
 For anyone interested in seeing the error handling in action, check out my [Scribbler](https://github.com/tgray017/scribbler) app!
 
